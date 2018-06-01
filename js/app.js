@@ -303,7 +303,6 @@ function returnHome(arr) {
 function findingLinks(arr) {
 	arr.forEach(function(val, i){
 			arr[i].addEventListener('click', function(){
-				history.replaceState(null, null, arr[i].href);
 			display.setAttribute('src', `assets/${arr[i].id}/index.html`);
 			main.innerHTML = html[arr[i].id];
 			title.innerText = `${arr[i].text} Tutorial`;

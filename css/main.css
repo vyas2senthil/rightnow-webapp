@@ -1,0 +1,194 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-size: 1.1rem;
+}
+p {
+	font-size: 20px;
+}
+
+img {
+	height: 150px;
+	margin: 0;
+	padding: 0;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none;
+	background: url('../images/rightnow.png') center no-repeat;
+	background-color: rgba(255,255,255,0.5);
+	margin: 12px 0;
+	height: 765px;
+	width: 1280px;
+}
+
+footer {
+	background: rgb(182,184,175);
+	height: 100%
+}
+
+footer p {
+	text-align: center;
+	font-size: .8rem;
+	padding: 50px;
+}
+
+
+.navbar {
+	padding: 0;
+	margin: 0;
+	height: 95px;
+	background: rgb(244,245,243);
+	
+}
+
+.navbar .container {
+	max-width: 1385px;
+	height: 95px;
+	padding-right: 50px;
+}
+
+.navbar-nav {
+	align-content: flex-end
+	width: 100%;
+}
+
+.dropdown-menu {
+	padding: 0;
+}
+
+.dropdown-header {
+	text-align: left;
+	font-size: 2rem;
+	background: rgb(244,245,243);
+}
+
+
+
+.nav-item {
+	margin: 0 5px;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.nav-link {
+	width: 118px;
+	text-align: center;
+
+}
+
+.dropdown-item {
+	font-size: .9rem;
+}
+
+.jumbotron-fluid{
+	background: url('../images/learn.jpg') no-repeat center;
+	background-size: cover;
+	margin: 0;
+}
+
+
+.iframe {
+	margin: 0 auto;
+	width: 1280px;
+}
+
+
+
+.main {
+	height: 100%;
+	background: rgb(240,237,232);
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.main .container {
+	max-width: 1200px;
+	padding: 20px 20px;
+	height: 90%;
+	margin: 0px auto;
+}
+
+.main .container h3 {
+	padding-bottom: 10px;
+	border-bottom: 3px solid black;
+	text-align: center;
+	font-size: 3rem;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#instructions {
+	font-size: 2rem;
+	text-align: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+.main .container h4 {
+	text-align: center;
+	font-size: 1.8rem;
+	margin-top: 60px;
+}
+
+.main p {
+	width: 80%;
+	font-size: 1.1rem;
+}
+
+.main-icon {
+	height: 150px;
+	margin: 20px 0;
+}
+
+.d-flex {
+	margin-bottom: 80px;
+}
+
+.p-2 {
+	margin-top: 20px;
+	text-align: center;
+	padding: 0;
+	max-width: 33.33%;
+}
+
+.p-2 h4 {
+	font-size: 2rem;
+	margin: 20px 0;
+}	
+
+
+.p-2 p {
+	width: 65%;
+	margin: 0 auto;
+}
+
+
+/* CSS for dynamic HTML*/
+.subtitles {
+	font-size: 1.2rem;
+}
+
+.line-items {
+	font-size: 1.1rem;
+}
+
+.sub-items {
+	margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -295,7 +295,6 @@ function returnHome(arr) {
 			display.removeAttribute('src');
 			main.innerHTML = html.main;
 			title.innerText = 'Training';
-			console.log(this.hash);
 		}, false);
 	});
 }

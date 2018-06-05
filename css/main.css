@@ -67,7 +67,9 @@ footer p {
 	background: rgb(244,245,243);
 }
 
-
+.navbar h3 {
+	font-size: 1.6rem;
+}
 
 .nav-item {
 	margin: 0 5px;

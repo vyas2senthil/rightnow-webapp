@@ -2,12 +2,34 @@
 // Selectors
 const links   = document.querySelectorAll('.dropdown-item'),
 	  home    = document.querySelectorAll('.home'),
-	  display = document.getElementById('display'),
+	  display = document.querySelector('.iframe'),
 	  main    = document.getElementById('info'),
 	  title   = document.getElementById('title');
+
 	  
 // HTML
 const html 	= {
+
+	main: 	`<h3>Welcome to RightNow Training!</h3>
+        	<h4>Skills you'll learn in this training</h4>
+				<div class="d-flex bd-highlight">
+  					<div class="p-2 flex-md-fill bd-highlight">
+  						<img class="main-icon" src="images/navigate.png"/>
+  						<h4>Navigate</h4>
+  						<p> In this training you will be able to learn the basics on how to navigate the user interface, and use the different types of features on the Right Now UI</p>
+  					</div>
+  					<div class="p-2 flex-md-fill bd-highlight">
+  						<img class="main-icon" src="images/ticket.svg"/>
+  						<h4>Tickets</h4>
+  						<p>In this training you will also learn the basics on how to create tickets, close tickets, respond to tickets, & create implementations from start to finish</p>
+  					</div>
+  					<div class="p-2 flex-md-fill bd-highlight">
+  						<img class="main-icon" src="images/search.png"/>
+  						<h4>Search</h4>
+  						<p>In this training you'll learn how to utilize the basic search options, and learn to utilize the most used search features everyday.</p>
+  					</div>
+				</div>`,
+
 	overview: `<h3 id="instructions">Instructions: Overview</h3>
 			   <h5><strong>The RightNow User Interface Consist of 5 Sections:</strong></h5>
 			   <ol>
@@ -264,50 +286,74 @@ const html 	= {
 				  </div>
 			    </div>`
 }
-// Test
+// Actions
 
-window.addEventListener('popstate', function(event) {
-   
+home.forEach(function(val, i){
+	home[i].onclick = function() {
+		location.hash = '';
+		display.innerHTML = '<iframe id="display"></iframe>';
+		main.innerHTML = html.main;
+		title.innerText = 'Training';
+	}
+});
 
 
+window.addEventListener('popstate', function(e) {
+	const hash = location.hash;
+	console.log(hash);
 
-    //     history.pushState(null, null, window.location.pathname);
-    // }
-    // iframe.contentWindow.history.back();
-    // alert('back button pressed');
+	function dynamicContent(folder, content, subject) {
+		setTimeout(function(){
+			display.innerHTML = `<iframe id="display" src="assets/${folder}/index.html"></iframe>`;
+			main.innerHTML = html[content];
+			title.innerText = `${subject} Tutorial`;
+		}, 300);
+	}
 
-    // history.pushState(null, null, window.history.back());
-    // location.reload(true);
+	switch(hash) {
+		case '':
+			display.innerHTML = '<iframe id="display"></iframe>';
+			main.innerHTML = html.main;
+			title.innerText = 'Training';
+			break;
+
+		case '#overview':
+			dynamicContent('overview', 'overview', 'Overview');
+			break;
+
+		case '#ticket':
+			dynamicContent('ticket', 'ticket', 'Creating a Ticket');
+			break;
+
+		case '#implementation':
+			dynamicContent('opportunity', 'opportunity', 'Creating an Implementation');	
+			break;
+
+		case '#closing':
+			dynamicContent('closing', 'closing', 'Closing a Ticket');	
+			break;
+
+		case '#responding':
+			dynamicContent('responding', 'responding', 'Responding to a Ticket');
+			break;
+
+		case '#contact':
+			dynamicContent('contact', 'contact', 'Contact Records');
+			break;
+
+		case '#search':
+			dynamicContent('search', 'search', 'Quick Search');
+			break;
+
+	}
 
 }, false);
 
 
-// Actions
-window.onload = function() {
-	findingLinks(links);
-	returnHome(home);
-}
 
 
-function returnHome(arr) {
-	arr.forEach(function(val, i){
-		arr[i].addEventListener('click', function(){
-			display.removeAttribute('src');
-			main.innerHTML = html.main;
-			title.innerText = 'Training';
-		}, false);
-	});
-}
 
-function findingLinks(arr) {
-	arr.forEach(function(val, i){
-			arr[i].addEventListener('click', function(){
-			display.setAttribute('src', `assets/${arr[i].id}/index.html`);
-			main.innerHTML = html[arr[i].id];
-			title.innerText = `${arr[i].text} Tutorial`;
-		}, false);
-	});
-}
+	
 
 
 

@@ -68,7 +68,7 @@ footer p {
 }
 
 .navbar h3 {
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 }
 
 .nav-item {
@@ -90,7 +90,7 @@ footer p {
 .jumbotron-fluid{
 	background: url('../images/learn.jpg') no-repeat center;
 	background-size: cover;
-	margin: 0;
+	margin-top: 95px
 }
 
 
@@ -139,12 +139,12 @@ footer p {
 }
 
 .main p {
-	width: 80%;
+	width: 100%;
 	font-size: 1.1rem;
 }
 
 .main-icon {
-	height: 150px;
+	height: 160px;
 	margin: 20px 0;
 }
 
@@ -156,7 +156,7 @@ footer p {
 	margin-top: 20px;
 	text-align: center;
 	padding: 0;
-	max-width: 33.33%;
+	max-width: 25%;
 }
 
 .p-2 h4 {
@@ -166,7 +166,7 @@ footer p {
 
 
 .p-2 p {
-	width: 65%;
+	width: 80%;
 	margin: 0 auto;
 }
 

@@ -41,9 +41,9 @@ window.onload = function() {
 		window.addEventListener('popstate', function(e) {
 			dynamicNavigation(location.hash);
 		}, false);
-		dynamicNavigation(location.hash);		
+				
 	}
-
+	dynamicNavigation(location.hash);
 	for(let i = 0; i < links.length; ++i) {
 		links[i].onclick = function() {
 			dynamicNavigation(this.hash);

@@ -19,7 +19,7 @@ a:hover {
 
 iframe {
 	border: none;
-	background: url('../images/rightnow.png') center no-repeat;
+	background: url('https://ilearn.intralinks.com/rightnow-training/images/rightnow.png') center no-repeat;
 	background-color: rgba(255,255,255,0.5);
 	height: 765px;
 	width: 1280px;
@@ -50,12 +50,6 @@ footer p {
 	height: 95px;
 	padding-right: 50px;
 }
-
-.navbar-nav {
-	align-content: flex-end
-	width: 100%;
-}
-
 
 .navbar h3 {
 	font-size: 1.6rem;

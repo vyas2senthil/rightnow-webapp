@@ -1,0 +1,22 @@
+{
+  "name": "right-now-webpage",
+  "version": "1.0.0",
+  "description": "API for Certification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nycbasic/rightnow-webapp.git"
+  },
+  "author": "spoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nycbasic/rightnow-webapp/issues"
+  },
+  "homepage": "https://github.com/nycbasic/rightnow-webapp#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

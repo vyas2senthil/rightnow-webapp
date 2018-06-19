@@ -5,7 +5,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="x-ua-compatible" content="IE=10">
 <title></title>
-<style type="text/css">#initialLoading{background:url(assets/htmlimages/loader.gif) no-repeat center center;background-color:#ffffff;position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;z-index:10010;}</style>
+<style type="text/css">
+#initialLoading{
+	background:url(assets/htmlimages/loader.gif) no-repeat center center;
+	background-color:#ffffff;
+	position:absolute;
+	margin:auto;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:10010;
+	}
+	
+	#section {
+		height: 3000px;
+		border: 1px dashed black;
+		width: 3000px;
+	}
+	</style>
 
 <script>
 
@@ -60,8 +78,17 @@ function initializeCP()
 </script>
 
  </head>
+ <section>
+
+</section>
 <body onload="onBodyLoad()">
-		<div id='initialLoading'></div>
+		
+		<div id='initialLoading'>
+
+		</div>
+		<div class="section">
+
+		</div>
 <script>
 		(function()
 		{
@@ -109,5 +136,6 @@ function initializeCP()
 		
 </script>
 <noscript style="text-align:center;font-size:24px;">Enable Javascript support in the browser.</noscript>
+
 </body>
 </html>

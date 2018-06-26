@@ -19,7 +19,7 @@ a:hover {
 
 iframe {
 	border: none;
-	background: url('https://ilearn.intralinks.com/rightnow-training/images/rightnow.png') center no-repeat;
+	background: url('../images/rightnow.png') center no-repeat;
 	background-color: rgba(255,255,255,0.5);
 	height: 765px;
 	width: 1280px;

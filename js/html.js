@@ -1,3 +1,5 @@
+// HTML
+
 const html = {
     main: "<h3>Welcome to RightNow Training!</h3><h4>What You Will Learn in RightNow Training.</h4><div class='d-flex bd-highlight'><div class='p-2 flex-md-fill bd-highlight'><img class='main-icon' src='images/navigate.png'/><h4>Navigate</h4><p>An overview of the control menu, display pane, recent items, quick search and navigation on the RightNow user interface.</p></div><div class='p-2 flex-md-fill bd-highlight'><img class='main-icon' src='images/ticket.svg'/><h4>Tickets</h4><p>The general process on how to create a ticket, respond to a ticket and closing a ticket.</p></div><div class='p-2 flex-md-fill bd-highlight'><img class='main-icon' src='images/implementation.png'/><h4>Implementation</h4><p>The basics on how to create new implementations for new contracts.</p></div><div class='p-2 flex-md-fill bd-highlight'><img class='main-icon' src='images/search.png'/><h4>Search</h4><p>How to use different search options with quick search, and an indepth look at contact records.</p></div</div>",
 
